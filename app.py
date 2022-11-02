@@ -5,11 +5,12 @@ import plotly.express as px
 import yfinance as yf
 
 
-app = Flask(__name__, template_folder='template')
+app = Flask(__name__)
 
 # Define the root route
 @app.route('/')
 def index():
+    
     return render_template('index3.html')
 
 @app.route('/callback/<endpoint>')
