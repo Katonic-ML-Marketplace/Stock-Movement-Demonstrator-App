@@ -5,7 +5,7 @@ import plotly.express as px
 import yfinance as yf
 
 
-app = Flask(__name__)
+app = Flask(__name__,static_folder='static')
 
 # Define the root route
 @app.route('/')
